@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+    <comment />
+    <entry key="insertJob">
+        INSERT INTO
+            job(job_code, job_name)
+        VALUES
+            (?, ?)
+    </entry>
+    <entry key="updateJob">
+        UPDATE
+            job
+        SET
+            job_name = ?
+        WHERE
+            job_code = ?
+    </entry>
+    <entry key="deleteJob">
+        DELETE FROM
+            job
+        WHERE
+            job_code = ?
+    </entry>
+</properties>
